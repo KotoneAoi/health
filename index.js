@@ -13,11 +13,6 @@ client.on('messageCreate', async msg => {
     msg.channel.send('生きろっ')
   }
 })
-client.on('messageCreate', async msg => {
-    if (msg.content === '死にたい') {
-      msg.channel.send('pong', { file: { attachment: C/Users/kumar/OneDrive/ピクチャ/o1280080014662998551.jpg } });
-    }
-  });
 
 client.on('messageCreate', async msg => {
   if (msg.content === '疲れた') {

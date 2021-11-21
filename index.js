@@ -29,7 +29,7 @@ client.on('messageCreate', async msg => {
 client.on('messageCreate', async msg => {
   if (msg.content === '今日は頑張れた') {
     msg.channel.send('おつかれ！')
-    msg.channel.send('ゆっくり休め！')
+    msg.channel.send('ゆっくり休め')
   }
 })
 

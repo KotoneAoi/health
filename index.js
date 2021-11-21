@@ -42,14 +42,14 @@ client.on('messageCreate', async msg => {
 
 client.on('messageCreate', async msg => {
     if (msg.content === 'k.サブチャンネル') {
-      msg.channel.send('')
+      msg.channel.send('https://www.youtube.com/channel/UCPHChzs3MP7X5BXa1eBaz0g')
       msg.channel.send('俺の動画を見ろ！')
     } 
   })
 
   client.on('messageCreate', async msg => {
     if (msg.content === 'k.ツイキャス') {
-      msg.channel.send('')
+      msg.channel.send('https://twitcasting.tv/korekore_ch')
       msg.channel.send('俺の配信を見ろ！')
     } 
   })

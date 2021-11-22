@@ -9,25 +9,37 @@ client.on('ready', () => {
 
 client.on('messageCreate', async msg => {
   if (msg.content === '死にたい') {
-    msg.channel.send('でも、今生きてる')
-    msg.channel.send('生きてるだけで偉いんだよ')
-    msg.channel.send('君は死にたいと思うほど苦しいのに、よく頑張って生きてる')
-    msg.channel.send('死ぬことと犯罪以外なら迷惑かけていいから')
-    msg.channel.send('頑張らなくてもいいから')
-    msg.channel.send('もう少し生きてみないか？')
-    msg.channel.send('困った時は俺に相談してこい')
+    setTimeout( function() {
+      msg.channel.send('生きてるだけで偉いんだから生きろ')
+      setTimeout( function() {
+        msg.channel.send('本当はね、苦しいはずなんだよ今')
+          setTimeout( function() {
+            msg.channel.send('でも、生きてる')
+            setTimeout( function() {
+              msg.channel.send('頑張らなくてもいいから')
+                setTimeout( function() {
+                  msg.channel.send('困った時は俺に相談してこい')
+                }, 5000 );
+            }, 5000 );
+          }, 5000 );
+      }, 6000 );
+  }, 20000 );
   } 
 })
 
 client.on('messageCreate', async msg => {
   if (msg.content === 'ありがとう') {
-    msg.channel.send('またいつでも話してこい')
+    setTimeout( function() {
+      msg.channel.send('またいつでも話してこい')
+    }, 5000 );
   }
 })
 
 client.on('messageCreate', async msg => {
   if (msg.content === '疲れた') {
-    msg.channel.send('またいつでも話してこい')
+    setTimeout( function() {
+      msg.channel.send('温泉いけ')
+    }, 5000 );
   }
 })
 

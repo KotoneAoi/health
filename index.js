@@ -8,7 +8,7 @@ client.on('ready', () => {
 
 
 client.on('messageCreate', async msg => {
-  if (msg.content === '死にたい、辛い、苦しい') {
+  if (msg.content === '死にたい') {
     msg.channel.send('でも、今生きてる')
     msg.channel.send('生きてるだけで偉いんだよ')
     msg.channel.send('君は死にたいと思うほど苦しいのに、よく頑張って生きてる')
@@ -20,15 +20,13 @@ client.on('messageCreate', async msg => {
 })
 
 client.on('messageCreate', async msg => {
-  if (msg.content === '死にたい') {
-    msg.channel.send('俺が命じる...')
-    msg.channel.send('お前は...')
-    msg.channel.send('生きろっ')
+  if (msg.content === 'ありがとう') {
+    msg.channel.send('またいつでも話してこい')
   }
 })
 
 client.on('messageCreate', async msg => {
-  if (msg.content === 'ありがとう') {
+  if (msg.content === '疲れた') {
     msg.channel.send('またいつでも話してこい')
   }
 })

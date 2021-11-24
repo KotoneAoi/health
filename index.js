@@ -19,9 +19,9 @@ client.on('messageCreate', async msg => {
               msg.channel.send('頑張らなくてもいいから')
                 setTimeout( function() {
                   msg.channel.send('困った時は俺に相談してこい')
-                }, 5000 );
-            }, 5000 );
-          }, 5000 );
+                }, 4000 );
+            }, 3000 );
+          }, 2000 );
       }, 6000 );
   }, 20000 );
   } 
@@ -36,9 +36,25 @@ client.on('messageCreate', async msg => {
 })
 
 client.on('messageCreate', async msg => {
+  if (msg.content === '助けて') {
+    setTimeout( function() {
+      msg.channel.send('どうした？')
+    }, 5000 );
+  }
+})
+
+client.on('messageCreate', async msg => {
+  if (msg.content === 'もう無理') {
+    setTimeout( function() {
+      msg.channel.send('お前ならできる、頑張れ')
+    }, 5000 );
+  }
+})
+
+client.on('messageCreate', async msg => {
   if (msg.content === '疲れた') {
     setTimeout( function() {
-      msg.channel.send('温泉いけ')
+      msg.channel.send('そんな時は温泉に行こう')
     }, 5000 );
   }
 })
